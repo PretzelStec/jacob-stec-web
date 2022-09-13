@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "TechMono";
+    src: local("TechMono"), url(./assets/fonts/ShareTechMono-Regular.ttf) format("truetype");
+}
+
+* {
+    font-family: "TechMono";
+}

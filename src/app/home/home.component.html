@@ -1,27 +1,66 @@
-<div class="col-10 mx-auto">
-  <div class="row mt-5">
+<div class="home col-10 mx-auto">
+  <div class="mt-5 home-container">
     <div class="jumbotron col-12 align-content-center h-100 text-secondary">
-      <span>{{ '{' }}</span>
+      <span>{{ "{" }}</span>
       <div class="px-3">
-          <span >"name":<h1 class="text-light px-3"> "jacob stec"</h1></span>
-          <span>"status":<h1 class="text-light px-3"> "junior software engineer"</h1></span>
-          <span>"about":</span>
-          <p class="px-3 text-light">
-            "Nullam aliquam ex ac ultrices ullamcorper. Vestibulum quis ante a magna
-            pretium auctor nec id justo. In pulvinar libero nec odio convallis, in
-            commodo nisi vestibulum. Maecenas laoreet vitae lorem quis placerat.
-            Proin hendrerit sollicitudin tortor eu egestas. In hac habitasse platea
-            dictumst. Pellentesque lacinia condimentum maximus. Duis ultricies diam
-            mauris, at posuere sem hendrerit eget. Phasellus non dapibus tellus, sit
-            amet tristique quam. Donec a sapien orci. Phasellus ante velit,
-            venenatis nec urna ut, tristique ornare nibh. Vivamus ut elit at turpis
-            auctor dignissim sit amet eget sapien. Maecenas hendrerit, est sit amet
-            pharetra rhoncus, felis neque vestibulum libero, eu fermentum neque
-            neque in orci. Nunc sed feugiat erat. Ut id fringilla justo. Fusce ac
-            ligula placerat, molestie enim ac, accumsan dui."
-          </p>
+        <span
+          >"name":
+          <h1 class="text-light px-3">"jacob stec"</h1></span
+        >
+        <span
+          >"status":
+          <h1 class="text-light px-3">"junior software engineer"</h1></span
+        >
+        <span>"about":</span>
+        <p class="px-3 text-light">
+          "Nullam aliquam ex ac ultrices ullamcorper. Vestibulum quis ante a
+          magna pretium auctor nec id justo. In pulvinar libero nec odio
+          convallis, in commodo nisi vestibulum. Maecenas laoreet vitae lorem
+          quis placerat. Proin hendrerit sollicitudin tortor eu egestas. In hac
+          habitasse platea dictumst. Pellentesque lacinia condimentum maximus.
+          Duis ultricies diam mauris, at posuere sem hendrerit eget. Phasellus
+          non dapibus tellus, sit amet tristique quam. Donec a sapien orci.
+          Phasellus ante velit, venenatis nec urna ut, tristique ornare nibh.
+          Vivamus ut elit at turpis auctor dignissim sit amet eget sapien.
+          Maecenas hendrerit, est sit amet pharetra rhoncus, felis neque
+          vestibulum libero, eu fermentum neque neque in orci. Nunc sed feugiat
+          erat. Ut id fringilla justo. Fusce ac ligula placerat, molestie enim
+          ac, accumsan dui."
+        </p>
       </div>
       <span>}</span>
+    </div>
+  </div>
+  <div class="tiles">
+    <h1 class="tiles-row-title mt-5">"Projects"</h1>
+    <div class="tiles-row">
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
+    </div>
+    <h1 class="tiles-row-title mt-5">"Experience"</h1>
+    <div class="tiles-row">
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
+    </div>
+    <h1 class="tiles-row-title mt-5">"For Fun"</h1>
+    <div class="tiles-row">
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
+      <app-tile
+        [tileObjects]="projectOne"
+      ></app-tile>
     </div>
   </div>
 </div>

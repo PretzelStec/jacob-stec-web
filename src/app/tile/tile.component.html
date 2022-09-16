@@ -1,0 +1,12 @@
+<div class="tile-container text-secondary">
+  <span>{{ "{" }}</span>
+  <div class="tile-content px-3">
+    <span class="tile-label" *ngFor="let obj of tileObjects"
+        >"{{ obj.label }}":
+        <h3 *ngIf="obj.type === 'title'" class="flex tile-value text-light px-3">"{{ obj.value }}"</h3>
+        <p *ngIf="obj.type === 'link'" class="flex tile-value text-light px-3"><a class="break-word" [href]="obj.value">"{{ obj.value }}"</a></p>
+        <p *ngIf="obj.type === 'normal'" class="flex tile-value text-light px-3">"{{ obj.value }}"</p>
+    </span>
+  </div>
+  <span>}</span>
+</div>

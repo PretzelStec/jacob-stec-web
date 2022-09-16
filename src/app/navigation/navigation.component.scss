@@ -1,3 +1,7 @@
-.navbar-nav {
-    flex-direction: row;
+.navbar-toggler {
+    border: 0px;
+}
+.navbar-toggler:focus {
+    border: 0px;
+    box-shadow: none;
 }

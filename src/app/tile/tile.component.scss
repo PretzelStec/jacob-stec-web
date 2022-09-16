@@ -1,0 +1,49 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(95%);
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+
+    }
+}
+
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.tile-container {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+    padding: 25px;
+    border: 1px solid white;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        .tile-label {
+            display: flex;
+            min-width: 0;
+            .tile-value {
+                word-wrap: normal;
+                display: flex;
+                min-width: 0;
+            }
+        }
+    }
+}
+
+.break-word {
+    word-wrap: break-word;
+}

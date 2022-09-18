@@ -5,22 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-import { TileComponent } from './tile/tile.component';
+import { TileComponent } from './home/tile/tile.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     NavigationComponent,
-    ProjectsComponent,
     ContactComponent,
-    TileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot(reducers, {
+        metaReducers,
+        runtimeChecks: {
+            strictStateImmutability: true,
+            strictActionImmutability: true,
+        },
+    }),
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

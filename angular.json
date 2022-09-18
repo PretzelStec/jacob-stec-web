@@ -111,10 +111,10 @@
       }
     }
   },
-  "defaultProject": "jacob-stec-web",
   "cli": {
     "schematicCollections": [
       "@ngrx/schematics"
-    ]
+    ],
+    "analytics": false
   }
 }
